@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "npx nodemon sever.js"
+    "dev": "npx nodemon sever.js",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
