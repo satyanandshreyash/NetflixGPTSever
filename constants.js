@@ -1,7 +1,7 @@
-import dotenv from 'dotenv';
+const dotenv = require('dotenv');
 dotenv.config();
 
-export const API_options = {
+const API_options = {
     method: 'GET',
     headers: {
         accept: 'application/json',
@@ -9,6 +9,8 @@ export const API_options = {
     }
 };
 
-export const openAIKey = process.env.OPENAI_API_KEY;
+const openAIKey = process.env.OPENAI_API_KEY;
 
-export const geminiAPIKey = process.env.GEMINI_API_KEY;  
+const geminiAPIKey = process.env.GEMINI_API_KEY;
+
+module.exports = { API_options, openAIKey, geminiAPIKey}
